@@ -1,0 +1,131 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+.Loading {
+  margin-top:200px;
+  animation: loading-spin infinite 2s linear;
+  height: 80px;
+}
+@keyframes loading-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.toggleButton{
+  display: flex;
+}
+.scoreContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+.scoreList{
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+.scoreItem {
+  display: flex;
+  padding: 20px;
+  border: 1px solid #BBBBBB;
+  margin-top: 20px;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.scoreItemHighlight {
+  display: flex;
+  padding: 20px;
+  border: 5px solid #BBBBBB;
+  margin-top: 20px;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.identifierSubItem {
+  flex: 2;
+}
+.scoreSubItem {
+  flex: 2;
+}
+
+li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 2px 0px #888888;
+}
+.toggleButton > div{
+  flex: 0.40;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 10px;
+  color: white;
+  display: flex;
+}
+.App-header  > div{
+  flex: 1;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+.App-title-2 {
+  margin-top:50px;
+  font-size: 1em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.previewComponent {
+  display: flex;
+}
+.previewComponent > div{
+  flex: 0.5;
+}
+.dropImageBox {
+  height:130px;
+  text-align:center;
+  margin-top: 5px;
+  margin-bottom:5px;
+  border-width: 2px;
+  border-color: rgb(102, 102, 102);
+  border-style: dashed;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.dropImageBox > p {
+  margin-top:40px;
+}
+.imgPreview {
+  margin: 5px 15px;
+}
+.imageStored {
+  width: 410px;
+  height: 410px;
+}
+.previewText {
+  width: 100%;
+  margin-top: 40%;
+}

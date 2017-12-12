@@ -1,0 +1,5 @@
+backend/venv*
+backend/src/arttagger/*.pyc
+backend/src/arttagger/*.pb
+backend/src/arttagger/*.txt
+frontend/node_modules
